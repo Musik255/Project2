@@ -12,37 +12,56 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-rj-QkC">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <rect key="frame" x="106.5" y="100" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Wuz-fw-5pP"/>
                                     <constraint firstAttribute="width" constant="200" id="zU5-Mk-ND7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ghd-ZS-NSM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ku-RE-FyZ">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ku-RE-FyZ">
+                                <rect key="frame" x="106.5" y="230" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MOT-7S-BfC"/>
                                     <constraint firstAttribute="height" constant="100" id="rYH-pc-CiJ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuO-Sv-QXT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-tO-2z3">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-tO-2z3">
+                                <rect key="frame" x="106.5" y="360" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="gH7-tL-ZTh"/>
                                     <constraint firstAttribute="height" constant="100" id="wBb-QL-3CI"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLz-ys-gEX"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="whi-sM-Aav">
+                                <rect key="frame" x="107" y="494" width="199" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,6 +70,8 @@
                             <constraint firstItem="zT4-tO-2z3" firstAttribute="top" secondItem="4ku-RE-FyZ" secondAttribute="bottom" constant="30" id="8rd-hc-ibf"/>
                             <constraint firstItem="4ku-RE-FyZ" firstAttribute="top" secondItem="Owv-rj-QkC" secondAttribute="bottom" constant="30" id="Q6c-F2-w53"/>
                             <constraint firstItem="Owv-rj-QkC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QIP-xG-J6J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="whi-sM-Aav" secondAttribute="bottom" constant="295" id="gUs-kh-UQK"/>
+                            <constraint firstItem="whi-sM-Aav" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iQZ-Ad-8Ih"/>
                             <constraint firstItem="zT4-tO-2z3" firstAttribute="centerX" secondItem="4ku-RE-FyZ" secondAttribute="centerX" id="pZp-y5-vAt"/>
                             <constraint firstItem="4ku-RE-FyZ" firstAttribute="centerX" secondItem="Owv-rj-QkC" secondAttribute="centerX" id="uHd-Ye-kWm"/>
                         </constraints>
@@ -60,6 +81,7 @@
                         <outlet property="button1" destination="Owv-rj-QkC" id="h2o-11-Zug"/>
                         <outlet property="button2" destination="4ku-RE-FyZ" id="Qar-zH-zN1"/>
                         <outlet property="button3" destination="zT4-tO-2z3" id="54N-qM-1X2"/>
+                        <outlet property="labelScore" destination="whi-sM-Aav" id="v7K-sQ-KLy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
