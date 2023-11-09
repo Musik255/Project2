@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     var score = 0
     
 
-    
-    
+
     @IBOutlet weak var button1: UIButton!
     
     @IBOutlet weak var button2: UIButton!
     
     @IBOutlet weak var button3: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
-        //button3.layer.borderColor = UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
+        button3.layer.borderColor = UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
         
         
         askQuestion()
