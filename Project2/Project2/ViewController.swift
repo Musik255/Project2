@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         countries.append("estonia")
         countries.append("france")
         countries.append("germany")
@@ -36,6 +35,16 @@ class ViewController: UIViewController {
         countries.append("spain")
         countries.append("uk")
         countries.append("us")
+        
+        button1.layer.borderWidth = 1
+        button2.layer.borderWidth = 1
+        button3.layer.borderWidth = 1
+        
+        button1.layer.borderColor = UIColor.lightGray.cgColor
+        button2.layer.borderColor = UIColor.lightGray.cgColor
+        button3.layer.borderColor = UIColor.lightGray.cgColor
+        //button3.layer.borderColor = UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
+        
         
         askQuestion()
     }
